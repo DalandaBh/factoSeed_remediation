@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 
 Route::resource('/livres','LivreController');
+
+Route::resource('/plats','PlatController');
+Route::resource('/saveurs','SaveurController');
