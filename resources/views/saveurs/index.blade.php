@@ -38,7 +38,9 @@
                             <td>{{$saveur->id}}</td>
                             <td>{{$saveur->name}}</td>
                             <td>
-                                {{-- <p>{{$saveur->plat->name}}</p> --}}
+                                @foreach ($saveur->plats as $plat)
+                                    <p>{{$plat->name}}</p>
+                                @endforeach
                             </td>
       
                             <td class="d-flex">

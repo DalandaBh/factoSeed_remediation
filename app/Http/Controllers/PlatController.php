@@ -45,6 +45,7 @@ class PlatController extends Controller
         $plat=new Plat();
 
         $plat->name=request('name');
+        $plat->quantite=request('quantite');
         $plat->saveur_id=request('saveur_id');
 
         $plat->save();
@@ -89,6 +90,7 @@ class PlatController extends Controller
         $plat=Plat::find($id);
 
         $plat->name=request('name');
+        $plat->quantite=request('quantite');
         $plat->saveur_id=request('saveur_id');
 
         $plat->save();

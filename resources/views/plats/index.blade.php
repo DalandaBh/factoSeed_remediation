@@ -27,6 +27,7 @@
                         <th scope="col">Id</th>
                         <th scope="col">Plats</th>
                         <th scope="col">Saveur</th>
+                        <th scope="col">Quantité</th>
                         <th scope="col">Action</th>
                       
                     </tr>
@@ -39,6 +40,7 @@
                             <td>
                                 <p>{{$plat->saveur->name}}</p>
                             </td>
+                            <td>x {{$plat->quantite}}</td>
                             <td class="d-flex">
                                 <a href="{{route('plats.edit', $plat->id)}}">
                                     <button class="btn btn-warning">Edit</button>

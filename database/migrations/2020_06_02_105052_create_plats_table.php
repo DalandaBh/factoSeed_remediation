@@ -16,6 +16,7 @@ class CreatePlatsTable extends Migration
         Schema::create('plats', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('quantite');
             $table->string('saveur_id');
             $table->timestamps();
         });

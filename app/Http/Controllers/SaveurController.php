@@ -17,7 +17,9 @@ class SaveurController extends Controller
     {
         $saveurs=Saveur::all();
 
-        return view('saveurs.index',compact('saveurs'));
+        $plats=Plat::all();
+
+        return view('saveurs.index',compact('saveurs','plats'));
     }
 
     /**
